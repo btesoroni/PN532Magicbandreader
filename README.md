@@ -23,13 +23,19 @@ sudo tar -xf libnfc-1.7.1.tar.bz2
 4. Compile and install
 
 cd libnfc-1.7.1
+
 ./configure --prefix=/usr --sysconfdir=/etc
+
 make
+
 sudo make install 
+
 5. Write the configuration file for NFC communication
 
 cd /etc
+
 sudo mkdir nfc
+
 sudo nano /etc/nfc/libnfc.conf
 
 WIRING
