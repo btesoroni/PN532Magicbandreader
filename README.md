@@ -3,14 +3,19 @@
 1. Open SPI of the Raspberry Pi:
 
 sudo raspi-config
+
 "Select 9 Advanced Options -> SPI -> yes."
+
 2. Install some dependent packages
 
 sudo apt-get update
+
 sudo apt-get install libusb-dev libpcsclite-dev i2c-tools
+
 3. Download and unzip the source code package of libnfc
 
 cd ~
+
 wget http://dl.bintray.com/nfc-tools/sources/libnfc-1.7.1.tar.bz2
 
 sudo tar -xf libnfc-1.7.1.tar.bz2  
