@@ -3,7 +3,7 @@
 1. Open SPI of the Raspberry Pi:
 
 sudo raspi-config
-Select 9 Advanced Options -> SPI -> yes.
+"Select 9 Advanced Options -> SPI -> yes."
 2. Install some dependent packages
 
 sudo apt-get update
