@@ -14,6 +14,7 @@ cd ~
 wget http://dl.bintray.com/nfc-tools/sources/libnfc-1.7.1.tar.bz2
 
 sudo tar -xf libnfc-1.7.1.tar.bz2  
+
 4. Compile and install
 
 cd libnfc-1.7.1
