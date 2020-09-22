@@ -24,4 +24,23 @@ sudo make install
 cd /etc
 sudo mkdir nfc
 sudo nano /etc/nfc/libnfc.conf
-add infor from libnfc.conf
+
+WIRING
+Toggle the switch to the SPI mode
+SEL0 |	SEL1
+
+Connect the devices:
+WIRING:
+PN532 |	Raspberry
+   5V	|5V
+  GND |	GND
+   SCK|	SCKL
+ MISO |	MISO
+  MOSI|	MOSI
+   SS |	CE0
+
+7. Run ls /dev/spidev0.* to check whether the SPI is opened or not.
+If yes, it means both the module and the wiring work well.
+
+Then type in nfc-list to check the NFC module:
+/dev/spidev0.0 /dev/spidev0.1
